@@ -7,15 +7,36 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct MainView: View {    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            TabView {
+                BookListView()
+                    .tabItem { Label("Books", systemImage: "book") }
+                
+                MovieListView()
+                    .tabItem { Label("Movies", systemImage: "movieclapper") }
+            }
+            .navigationTitle("Tracking List")
+            .toolbar {
+                ToolbarItem {
+                    NavigationLink(destination: Text("Toolbar add new item2")) {
+                        Label("Add", systemImage: "plus")
+                    }
+                }
+            }
         }
-        .padding()
+    }
+}
+
+struct SectionHeader: View {
+    let title: String
+    
+    var body: some View {
+        Text(title)
+            .foregroundStyle(Color("SectionColor"))
+            .font(.title2)
+            .fontWeight(.semibold)
     }
 }
 
