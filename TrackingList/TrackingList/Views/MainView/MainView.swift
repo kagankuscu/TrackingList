@@ -38,6 +38,13 @@ struct MainView: View {
             }
             .listStyle(.grouped)
             .navigationTitle("Tracking List")
+            .toolbar {
+                ToolbarItem {
+                    NavigationLink(destination: Text("Toolbar add new item")) {
+                        Label("Add", systemImage: "plus")
+                    }
+                }
+            }
         }
     }
 }
