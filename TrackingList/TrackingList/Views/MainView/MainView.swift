@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var books: [Book] = Book.MOCK_BOOKS
+    @State var movies: [Movie] = Movie.MOCK_MOVIES
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(books) { book in
+                        NavigationLink(destination: Text("Book \(book.author)")) {
+                            RowView(item:  book)
+                        }
+                    }
+                } header: {
+                    SectionHeader(title: "Books")
+                }
+                
+                .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
+                Section {
+                    ForEach(movies) { movie in
+                        NavigationLink(destination: Text("Movie: \(movie.title)")) {
+                            RowView(item: movie)
+                        }
+                    }
+                } header: {
+                    SectionHeader(title: "Movies")
+                }
+                .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
+            }
+            .listStyle(.grouped)
+            .navigationTitle("Tracking List")
         }
-        .padding()
+    }
+}
+
+struct SectionHeader: View {
+    let title: String
+    
+    var body: some View {
+        Text(title)
+            .foregroundStyle(Color("SectionColor"))
+            .font(.title2)
+            .fontWeight(.semibold)
     }
 }
 
