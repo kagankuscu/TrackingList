@@ -7,40 +7,20 @@
 
 import SwiftUI
 
-struct MainView: View {
-    @State var books: [Book] = Book.MOCK_BOOKS
-    @State var movies: [Movie] = Movie.MOCK_MOVIES
-    
+struct MainView: View {    
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    ForEach(books) { book in
-                        NavigationLink(destination: Text("Book \(book.author)")) {
-                            RowView(item:  book)
-                        }
-                    }
-                } header: {
-                    SectionHeader(title: "Books")
-                }
+            TabView {
+                BookListView()
+                    .tabItem { Label("Books", systemImage: "book") }
                 
-                .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
-                Section {
-                    ForEach(movies) { movie in
-                        NavigationLink(destination: Text("Movie: \(movie.title)")) {
-                            RowView(item: movie)
-                        }
-                    }
-                } header: {
-                    SectionHeader(title: "Movies")
-                }
-                .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
+                MovieListView()
+                    .tabItem { Label("Movies", systemImage: "movieclapper") }
             }
-            .listStyle(.grouped)
             .navigationTitle("Tracking List")
             .toolbar {
                 ToolbarItem {
-                    NavigationLink(destination: Text("Toolbar add new item")) {
+                    NavigationLink(destination: Text("Toolbar add new item2")) {
                         Label("Add", systemImage: "plus")
                     }
                 }

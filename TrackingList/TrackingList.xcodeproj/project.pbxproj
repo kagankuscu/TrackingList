@@ -15,6 +15,8 @@
 		C3DAFF0D2AED87D70056A661 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFF0C2AED87D70056A661 /* Item.swift */; };
 		C3DAFF0F2AED96E40056A661 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFF0E2AED96E40056A661 /* Book.swift */; };
 		C3DAFF112AED96F00056A661 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFF102AED96F00056A661 /* Movie.swift */; };
+		C3DAFF132AEDAD800056A661 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFF122AEDAD800056A661 /* BookListView.swift */; };
+		C3DAFF152AEDADB00056A661 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFF142AEDADB00056A661 /* MovieListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		C3DAFF0C2AED87D70056A661 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C3DAFF0E2AED96E40056A661 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C3DAFF102AED96F00056A661 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C3DAFF122AEDAD800056A661 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		C3DAFF142AEDADB00056A661 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 		C3DAFF092AED77470056A661 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				C3DAFF122AEDAD800056A661 /* BookListView.swift */,
+				C3DAFF142AEDADB00056A661 /* MovieListView.swift */,
 				C3DAFEF92AED763E0056A661 /* MainView.swift */,
 				C3DAFF0A2AED86810056A661 /* RowView.swift */,
 			);
@@ -194,6 +200,8 @@
 				C3DAFF112AED96F00056A661 /* Movie.swift in Sources */,
 				C3DAFF0B2AED86810056A661 /* RowView.swift in Sources */,
 				C3DAFF0F2AED96E40056A661 /* Book.swift in Sources */,
+				C3DAFF152AEDADB00056A661 /* MovieListView.swift in Sources */,
+				C3DAFF132AEDAD800056A661 /* BookListView.swift in Sources */,
 				C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
