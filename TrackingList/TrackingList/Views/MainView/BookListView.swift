@@ -11,18 +11,24 @@ struct BookListView: View {
     @State var books: [Book] = Book.MOCK_BOOKS
     
     var body: some View {
-        List {
-            Section {
-                ForEach(books) { book in
-                    NavigationLink(destination: Text("Book: \(book.title)")) {
-                        RowView(item: book)
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(books) { book in
+                        NavigationLink(destination: Text("Book: \(book.title)")) {
+                            RowView(item: book)
+                        }
                     }
+                } header: {
+                    SectionHeader(title: "Books")
                 }
-            } header: {
-                SectionHeader(title: "Books")
+            }
+            .listStyle(.grouped)
+            .navigationTitle("Tracking List")
+            .toolbar {
+                AddButton(destination: AddAndEditBookView(), labelTitle: "Add Book")
             }
         }
-        .listStyle(.grouped)
     }
 }
 
