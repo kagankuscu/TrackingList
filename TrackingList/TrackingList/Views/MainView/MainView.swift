@@ -20,7 +20,7 @@ struct MainView: View {
             .navigationTitle("Tracking List")
             .toolbar {
                 ToolbarItem {
-                    NavigationLink(destination: Text("Toolbar add new item2")) {
+                    NavigationLink(destination: AddAndEditView()) {
                         Label("Add", systemImage: "plus")
                     }
                 }

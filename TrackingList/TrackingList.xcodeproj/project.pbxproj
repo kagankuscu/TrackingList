@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C388084F2AEE5D1B0069E466 /* AddAndEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */; };
 		C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */; };
 		C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF92AED763E0056A661 /* MainView.swift */; };
 		C3DAFEFC2AED763F0056A661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DAFEFB2AED763F0056A661 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndEditView.swift; sourceTree = "<group>"; };
 		C3DAFEF42AED763E0056A661 /* TrackingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListApp.swift; sourceTree = "<group>"; };
 		C3DAFEF92AED763E0056A661 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C38808502AEE5D210069E466 /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */,
+			);
+			path = AddView;
+			sourceTree = "<group>";
+		};
 		C3DAFEEB2AED763E0056A661 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				C3DAFF092AED77470056A661 /* MainView */,
+				C38808502AEE5D210069E466 /* AddView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				C3DAFF0D2AED87D70056A661 /* Item.swift in Sources */,
 				C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */,
 				C3DAFF112AED96F00056A661 /* Movie.swift in Sources */,
+				C388084F2AEE5D1B0069E466 /* AddAndEditView.swift in Sources */,
 				C3DAFF0B2AED86810056A661 /* RowView.swift in Sources */,
 				C3DAFF0F2AED96E40056A661 /* Book.swift in Sources */,
 				C3DAFF152AEDADB00056A661 /* MovieListView.swift in Sources */,
