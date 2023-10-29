@@ -7,24 +7,14 @@
 
 import SwiftUI
 
-struct MainView: View {    
+struct MainView: View {
     var body: some View {
-        NavigationStack {
-            TabView {
-                BookListView()
-                    .tabItem { Label("Books", systemImage: "book") }
-                
-                MovieListView()
-                    .tabItem { Label("Movies", systemImage: "movieclapper") }
-            }
-            .navigationTitle("Tracking List")
-            .toolbar {
-                ToolbarItem {
-                    NavigationLink(destination: AddAndEditView()) {
-                        Label("Add", systemImage: "plus")
-                    }
-                }
-            }
+        TabView {
+            BookListView()
+                .tabItem { Label("Books", systemImage: "book") }
+            
+            MovieListView()
+                .tabItem { Label("Movies", systemImage: "movieclapper") }
         }
     }
 }

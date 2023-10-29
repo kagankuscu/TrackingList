@@ -11,18 +11,24 @@ struct MovieListView: View {
     @State var movies: [Movie] = Movie.MOCK_MOVIES
     
     var body: some View {
-        List {
-            Section {
-                ForEach(movies) { movie in
-                    NavigationLink(destination: Text("Movie: \(movie.title)")) {
-                        RowView(item: movie)
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(movies) { movie in
+                        NavigationLink(destination: Text("Movie: \(movie.title)")) {
+                            RowView(item: movie)
+                        }
                     }
+                } header: {
+                    SectionHeader(title: "Movies")
                 }
-            } header: {
-                SectionHeader(title: "Movies")
+            }
+            .listStyle(.grouped)
+            .navigationTitle("Tracking List")
+            .toolbar {
+                AddButton(destination: AddAndEditMovieView(), labelTitle: "Add Movie")
             }
         }
-        .listStyle(.grouped)
     }
 }
 
