@@ -8,28 +8,24 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var books: [any Item] = []
+    @State var movies: [any Item] = []
+    
     var body: some View {
         TabView {
-            BookListView()
+            ItemListView(headerTitle: "Books", items: $books)
                 .tabItem { Label("Books", systemImage: "book") }
             
-            MovieListView()
+            ItemListView(headerTitle: "Movies", items: $movies)
                 .tabItem { Label("Movies", systemImage: "movieclapper") }
         }
     }
 }
 
-struct SectionHeader: View {
-    let title: String
-    
-    var body: some View {
-        Text(title)
-            .foregroundStyle(Color("SectionColor"))
-            .font(.title2)
-            .fontWeight(.semibold)
-    }
+#Preview {
+    MainView()
 }
 
 #Preview {
-    MainView()
+    MainView(books: Book.MOCK_BOOKS, movies: Movie.MOCK_MOVIES)
 }
