@@ -20,6 +20,7 @@
 		C38808682AEEB2050069E466 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808672AEEB2050069E466 /* DetailsView.swift */; };
 		C388086A2AEEB66C0069E466 /* DoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808692AEEB66C0069E466 /* DoneStatus.swift */; };
 		C388086C2AEEB8800069E466 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388086B2AEEB8800069E466 /* FavoriteView.swift */; };
+		C38808702AEEC89D0069E466 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388086F2AEEC89D0069E466 /* ItemListView.swift */; };
 		C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */; };
 		C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF92AED763E0056A661 /* MainView.swift */; };
 		C3DAFEFC2AED763F0056A661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DAFEFB2AED763F0056A661 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		C38808672AEEB2050069E466 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		C38808692AEEB66C0069E466 /* DoneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneStatus.swift; sourceTree = "<group>"; };
 		C388086B2AEEB8800069E466 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		C388086F2AEEC89D0069E466 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		C3DAFEF42AED763E0056A661 /* TrackingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListApp.swift; sourceTree = "<group>"; };
 		C3DAFEF92AED763E0056A661 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				C3DAFF142AEDADB00056A661 /* MovieListView.swift */,
 				C3DAFEF92AED763E0056A661 /* MainView.swift */,
 				C3DAFF0A2AED86810056A661 /* RowView.swift */,
+				C388086F2AEEC89D0069E466 /* ItemListView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				C3DAFF112AED96F00056A661 /* Movie.swift in Sources */,
 				C38808572AEE684C0069E466 /* InfoView.swift in Sources */,
 				C38808532AEE5FB50069E466 /* AddBookButton.swift in Sources */,
+				C38808702AEEC89D0069E466 /* ItemListView.swift in Sources */,
 				C388085E2AEE749F0069E466 /* InfoHeader.swift in Sources */,
 				C38808622AEE76350069E466 /* ActionButton.swift in Sources */,
 				C388084F2AEE5D1B0069E466 /* AddAndEditBookView.swift in Sources */,
