@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C388084F2AEE5D1B0069E466 /* AddAndEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */; };
+		C388084F2AEE5D1B0069E466 /* AddAndEditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388084E2AEE5D1B0069E466 /* AddAndEditBookView.swift */; };
+		C38808532AEE5FB50069E466 /* AddBookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808522AEE5FB50069E466 /* AddBookButton.swift */; };
+		C38808552AEE605D0069E466 /* AddAndEditMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808542AEE605D0069E466 /* AddAndEditMovieView.swift */; };
+		C38808572AEE684C0069E466 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808562AEE684C0069E466 /* InfoView.swift */; };
+		C38808592AEE68EB0069E466 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808582AEE68EB0069E466 /* FavoriteButton.swift */; };
+		C388085C2AEE70CE0069E466 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388085B2AEE70CE0069E466 /* ButtonStyles.swift */; };
+		C388085E2AEE749F0069E466 /* InfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388085D2AEE749F0069E466 /* InfoHeader.swift */; };
+		C38808602AEE75830069E466 /* AddViewToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388085F2AEE75830069E466 /* AddViewToolbarButton.swift */; };
+		C38808622AEE76350069E466 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808612AEE76350069E466 /* ActionButton.swift */; };
+		C38808652AEE7F8B0069E466 /* FocusField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808642AEE7F8B0069E466 /* FocusField.swift */; };
 		C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */; };
 		C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF92AED763E0056A661 /* MainView.swift */; };
 		C3DAFEFC2AED763F0056A661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DAFEFB2AED763F0056A661 /* Assets.xcassets */; };
@@ -21,7 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndEditView.swift; sourceTree = "<group>"; };
+		C388084E2AEE5D1B0069E466 /* AddAndEditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndEditBookView.swift; sourceTree = "<group>"; };
+		C38808522AEE5FB50069E466 /* AddBookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookButton.swift; sourceTree = "<group>"; };
+		C38808542AEE605D0069E466 /* AddAndEditMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAndEditMovieView.swift; sourceTree = "<group>"; };
+		C38808562AEE684C0069E466 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C38808582AEE68EB0069E466 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		C388085B2AEE70CE0069E466 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		C388085D2AEE749F0069E466 /* InfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHeader.swift; sourceTree = "<group>"; };
+		C388085F2AEE75830069E466 /* AddViewToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewToolbarButton.swift; sourceTree = "<group>"; };
+		C38808612AEE76350069E466 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		C38808642AEE7F8B0069E466 /* FocusField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusField.swift; sourceTree = "<group>"; };
 		C3DAFEF42AED763E0056A661 /* TrackingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListApp.swift; sourceTree = "<group>"; };
 		C3DAFEF92AED763E0056A661 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -49,9 +67,39 @@
 		C38808502AEE5D210069E466 /* AddView */ = {
 			isa = PBXGroup;
 			children = (
-				C388084E2AEE5D1B0069E466 /* AddAndEditView.swift */,
+				C388084E2AEE5D1B0069E466 /* AddAndEditBookView.swift */,
+				C38808542AEE605D0069E466 /* AddAndEditMovieView.swift */,
+				C38808562AEE684C0069E466 /* InfoView.swift */,
+				C388085D2AEE749F0069E466 /* InfoHeader.swift */,
+				C388085F2AEE75830069E466 /* AddViewToolbarButton.swift */,
+				C38808612AEE76350069E466 /* ActionButton.swift */,
 			);
 			path = AddView;
+			sourceTree = "<group>";
+		};
+		C38808512AEE5F900069E466 /* ToolbarView */ = {
+			isa = PBXGroup;
+			children = (
+				C38808522AEE5FB50069E466 /* AddBookButton.swift */,
+				C38808582AEE68EB0069E466 /* FavoriteButton.swift */,
+			);
+			path = ToolbarView;
+			sourceTree = "<group>";
+		};
+		C388085A2AEE70B20069E466 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C388085B2AEE70CE0069E466 /* ButtonStyles.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C38808632AEE7F760069E466 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C38808642AEE7F8B0069E466 /* FocusField.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		C3DAFEEB2AED763E0056A661 = {
@@ -73,6 +121,7 @@
 		C3DAFEF62AED763E0056A661 /* TrackingList */ = {
 			isa = PBXGroup;
 			children = (
+				C38808632AEE7F760069E466 /* Other */,
 				C3DAFF082AED773A0056A661 /* App */,
 				C3DAFF072AED77320056A661 /* Models */,
 				C3DAFF062AED772A0056A661 /* ViewModels */,
@@ -93,6 +142,8 @@
 		C3DAFF052AED77250056A661 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C388085A2AEE70B20069E466 /* Other */,
+				C38808512AEE5F900069E466 /* ToolbarView */,
 				C3DAFF092AED77470056A661 /* MainView */,
 				C38808502AEE5D210069E466 /* AddView */,
 			);
@@ -207,14 +258,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DAFF0D2AED87D70056A661 /* Item.swift in Sources */,
+				C38808552AEE605D0069E466 /* AddAndEditMovieView.swift in Sources */,
 				C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */,
 				C3DAFF112AED96F00056A661 /* Movie.swift in Sources */,
-				C388084F2AEE5D1B0069E466 /* AddAndEditView.swift in Sources */,
+				C38808572AEE684C0069E466 /* InfoView.swift in Sources */,
+				C38808532AEE5FB50069E466 /* AddBookButton.swift in Sources */,
+				C388085E2AEE749F0069E466 /* InfoHeader.swift in Sources */,
+				C38808622AEE76350069E466 /* ActionButton.swift in Sources */,
+				C388084F2AEE5D1B0069E466 /* AddAndEditBookView.swift in Sources */,
+				C38808602AEE75830069E466 /* AddViewToolbarButton.swift in Sources */,
 				C3DAFF0B2AED86810056A661 /* RowView.swift in Sources */,
 				C3DAFF0F2AED96E40056A661 /* Book.swift in Sources */,
 				C3DAFF152AEDADB00056A661 /* MovieListView.swift in Sources */,
 				C3DAFF132AEDAD800056A661 /* BookListView.swift in Sources */,
+				C388085C2AEE70CE0069E466 /* ButtonStyles.swift in Sources */,
+				C38808652AEE7F8B0069E466 /* FocusField.swift in Sources */,
 				C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */,
+				C38808592AEE68EB0069E466 /* FavoriteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
