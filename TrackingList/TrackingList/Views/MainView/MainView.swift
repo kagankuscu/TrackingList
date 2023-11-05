@@ -8,24 +8,20 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var books: [any Item] = []
-    @State var movies: [any Item] = []
+    @StateObject private var itemViewModel = ItemViewModel()
     
     var body: some View {
         TabView {
-            ItemListView(headerTitle: "Books", items: $books)
+            ItemListView(headerTitle: "Books", items: $itemViewModel.books)
                 .tabItem { Label("Books", systemImage: "book") }
             
-            ItemListView(headerTitle: "Movies", items: $movies)
+            ItemListView(headerTitle: "Movies", items: $itemViewModel.movies)
                 .tabItem { Label("Movies", systemImage: "movieclapper") }
         }
+        .environmentObject(itemViewModel)
     }
 }
 
 #Preview {
     MainView()
-}
-
-#Preview {
-    MainView(books: Book.MOCK_BOOKS, movies: Movie.MOCK_MOVIES)
 }

@@ -22,6 +22,7 @@
 		C388086C2AEEB8800069E466 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388086B2AEEB8800069E466 /* FavoriteView.swift */; };
 		C38808702AEEC89D0069E466 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388086F2AEEC89D0069E466 /* ItemListView.swift */; };
 		C38808722AEED0690069E466 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808712AEED0690069E466 /* SectionHeader.swift */; };
+		C38808742AEED6BF0069E466 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38808732AEED6BF0069E466 /* ItemViewModel.swift */; };
 		C3DAFEF82AED763E0056A661 /* TrackingListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */; };
 		C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DAFEF92AED763E0056A661 /* MainView.swift */; };
 		C3DAFEFC2AED763F0056A661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DAFEFB2AED763F0056A661 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		C388086B2AEEB8800069E466 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		C388086F2AEEC89D0069E466 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		C38808712AEED0690069E466 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		C38808732AEED6BF0069E466 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		C3DAFEF42AED763E0056A661 /* TrackingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DAFEF72AED763E0056A661 /* TrackingListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListApp.swift; sourceTree = "<group>"; };
 		C3DAFEF92AED763E0056A661 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		C3DAFF062AED772A0056A661 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C38808732AEED6BF0069E466 /* ItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				C3DAFF0D2AED87D70056A661 /* Item.swift in Sources */,
 				C38808682AEEB2050069E466 /* DetailsView.swift in Sources */,
 				C38808552AEE605D0069E466 /* AddAndEditMovieView.swift in Sources */,
+				C38808742AEED6BF0069E466 /* ItemViewModel.swift in Sources */,
 				C3DAFEFA2AED763E0056A661 /* MainView.swift in Sources */,
 				C38808722AEED0690069E466 /* SectionHeader.swift in Sources */,
 				C3DAFF112AED96F00056A661 /* Movie.swift in Sources */,
