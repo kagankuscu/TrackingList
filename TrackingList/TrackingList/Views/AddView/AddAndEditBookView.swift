@@ -21,6 +21,8 @@ struct AddAndEditBookView: View {
     
     @FocusState private var focusState: FocusField?
     
+    @EnvironmentObject private var itemViewModel: ItemViewModel
+    
     var body: some View {
         VStack {
             Form {
@@ -33,7 +35,14 @@ struct AddAndEditBookView: View {
                 }
             }
             ActionButton(item: self.book, action: {
-                print("Book: \(self.author)")
+                let book = Book(image: image,
+                                title: title,
+                                descriptions: descriptions,
+                                isFavorite: isFavorite,
+                                isDone: isDone,
+                                author: author)
+                
+                itemViewModel.addItem(for: book)
                 
                 focusState = nil
             })

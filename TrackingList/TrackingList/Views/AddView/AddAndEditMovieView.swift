@@ -20,6 +20,8 @@ struct AddAndEditMovieView: View {
     
     @FocusState private var focusState: FocusField?
     
+    @EnvironmentObject private var itemViewModel: ItemViewModel
+    
     var body: some View {
         VStack {
             Form {
@@ -29,7 +31,12 @@ struct AddAndEditMovieView: View {
                 }
             }
             ActionButton(item: self.movie, action: {
-                print("Movie: \(self.director)")
+                let movie = Movie(image: image,
+                                  title: title,
+                                  descriptions: descriptions,
+                                  isFavorite: isFavorite,
+                                  isDone: isDone)
+                itemViewModel.addItem(for: movie)
                 focusState = nil
             })
         }
